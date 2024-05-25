@@ -2,6 +2,8 @@ import express from 'express';
 import morgan from 'morgan';
 
 import { morganMiddleware } from './utils/logger.js';
+import taskRoutes from './routes/taskRoutes.js';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 const app = express();
 
@@ -13,8 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morganMiddleware);
 
-app.get('/test', (req, res) => {
-  res.send('Hello World!');
-});
+app.use('/api/v1/tasks', taskRoutes);
+
+app.use(notFound);
+app.use(errorHandler);
 
 export default app;

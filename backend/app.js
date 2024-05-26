@@ -1,11 +1,14 @@
 import express from 'express';
 import morgan from 'morgan';
+import cors from 'cors';
 
 import { morganMiddleware } from './utils/logger.js';
 import taskRoutes from './routes/taskRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 const app = express();
+
+app.use(cors());
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));

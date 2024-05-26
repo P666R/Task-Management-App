@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is a frontend application for managing tasks. It provides features to create, edit, delete, and list tasks. The application aims to be user-friendly, responsive, and secure.
+Task Management App frontend implements the client-side functionalities for managing tasks. It provides features to create, edit, delete, and list tasks. The application aims to be user-friendly, responsive, and secure.
 
 ## Technologies Used
 
@@ -10,12 +10,14 @@ This project is a frontend application for managing tasks. It provides features 
 - Formik: Used for form management, validation, and easy integration with React.
 - React Query: Utilized for fetching and managing data from the backend API.
 - Tailwind CSS with CSS Modules: Selected for its utility-first approach, ease of use, and ability to create responsive designs.
+- Yup: Used for schema validation and easy integration with React Formik.
 
 ## Design Considerations
 
 - **User-Friendly UI**: The UI is designed to be intuitive and easy to use, with clear navigation and informative feedback.
 - **Responsive Design**: The application is designed to work seamlessly on both mobile and desktop devices, adapting to different screen sizes.
-- **Strong Client-Side Validations**: Client-side validations ensure data integrity and provide instant feedback to users.
+- **Client-Side Validations**: Client-side validations ensure data integrity and provide instant feedback to users.
+- **Error Handling**: The application handles errors gracefully, displaying meaningful error messages to users.
 
 ## Folder Structure
 
@@ -64,10 +66,9 @@ The frontend follows a modular architecture, with components organized into sepa
 
 ## Installation and Setup
 
-1. Clone the repository:
+1. Change directory to frontend folder:
    ```bash
-   git clone <repository-url>
-   cd task-management-frontend
+   cd frontend
    ```
 2. Install dependencies:
    ```bash

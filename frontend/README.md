@@ -1,4 +1,4 @@
-# Task Management Frontend
+# Task Management App (Frontend)
 
 ## Project Description
 
@@ -9,7 +9,7 @@ Task Management App frontend implements the client-side functionalities for mana
 - React: Chosen for its popularity, component-based architecture, and efficient rendering.
 - Formik: Used for form management, validation, and easy integration with React.
 - React Query: Utilized for fetching and managing data from the backend API.
-- Tailwind CSS with CSS Modules: Selected for its utility-first approach, ease of use, and ability to create responsive designs.
+- TailwindCSS: Selected for its utility-first approach, ease of use, and ability to create responsive designs.
 - Yup: Used for schema validation and easy integration with React Formik.
 
 ## Design Considerations
@@ -66,7 +66,7 @@ The frontend follows a modular architecture, with components organized into sepa
 
 ## Installation and Setup
 
-1. Change directory to frontend folder:
+1. Change directory to frontend folder (provided you have already setup the backend):
    ```bash
    cd frontend
    ```
@@ -74,7 +74,7 @@ The frontend follows a modular architecture, with components organized into sepa
    ```bash
    npm install
    ```
-3. Run the application:
+3. Start the application:
    ```bash
    npm run dev
    ```

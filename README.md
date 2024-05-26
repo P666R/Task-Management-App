@@ -1,4 +1,4 @@
-# Task Management API (Backend)
+# Task Management App (Backend)
 
 #### (For Task Management App Frontend details and setup, please refer the [Frontend README](frontend/README.md).)
 
@@ -18,7 +18,7 @@ Task Management App backend implements an API designed to handle tasks efficient
 
 ## Design Considerations
 
-- **Separation of Concerns**: Each layer (controller, service, repository) has a distinct responsibility, making the codebase more maintainable and testable.
+- **Separation of Concerns**: Each layer (controller, service, repository) has a distinct responsibility, making the codebase more maintainable.
 - **Modular Code**: Code is organized into modules, promoting reusability and ease of understanding.
 
 ## Architecture Overview
@@ -135,7 +135,7 @@ POST http://localhost:3000/api/tasks
    127.0.0.1:6379>ping
    returns pong
    ```
-4. **Start the Server**:
+4. **Start the backend server**:
    ```bash
    npm run dev
    ```
